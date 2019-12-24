@@ -1,0 +1,93 @@
+.overlay .popup .form-control {
+    box-shadow: none;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h4 {
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.overlay .popup #msg {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+    box-shadow: none;
+}
+
+.overlay .Boton1 {
+    background-color: rgb(240, 154, 42);
+    width: 100%;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px #000;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid rgb(240, 154, 42);
+    transition: 0.6s ease;
+    font-size: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+}
+
+.overlay .Boton1:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+    background-color: rgb(240, 190, 42);
+    border: 1px solid rgb(240, 190, 42);
+    cursor: pointer;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, .7);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+}
+
+.overlay.active {
+    visibility: visible;
+}
+
+.popup {
+    width: 450px;
+    background: rgba(248, 248, 248, 0.966);
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 30px;
+    opacity: 0;
+    transform: scale(0.7);
+    transition: 0.3s ease all;
+}
+
+.popup .btn-cerrar-popup {
+    font-size: 16px;
+    line-height: 16px;
+    float: right;
+    transition: .3s ease all;
+    color: #BBBBBB;
+    transition: .3 ease all;
+}
+
+.popup .btn-cerrar-popup:hover {
+    color: #000;
+}
+
+.popup.active {
+    opacity: 1;
+    transform: scale(1);
+}

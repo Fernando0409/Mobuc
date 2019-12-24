@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Estilos de Fuentes--->
+    <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/contac.css">
+
+    <title>MoBuc</title>
+
+</head>
+
+<body>
+    <div class="ContenedorPrincipal">
+        <header>
+            <div class="logo">
+                <img src="img/ucol.png" alt="" width="250px">
+            </div>
+            <nav>
+                <a class="qi" href="index.html">Inicio</a>
+                <a class="qi" target="_blank" href="docs/Reglamento_de_la_Biblioteca.pdf">Reglamento</a>
+                <button class="qo" id="btn-abrir-popup">Contactanos</button>
+                <a class="qi" href="Acercade.html">Acerca de</a>
+            </nav>
+        </header>
+        <div id="inicio">
+            <div class="contenedor">
+                <h1>MoBuc</h1>
+                <p>Busca, Aparta y Aprende</p>
+                <form class="nati" name="form1" method="POST" action="php/buscar.php">
+                    <input name="titulo_libro" type="text" class="form-control" placeholder="Ingresa titulo..">
+                    <input class="Boton" type="submit" name="submit" value="Buscar">
+                </form>
+            </div>
+        </div>
+
+        <div class="catalogo">
+            <div class="card">
+                <form action="infolibro.php" method="post">
+                        <img src="img/libros/c.jpg" class="card-img-top" alt="libro" >
+                        <div class="card-body">
+                            <h5 class="card-title">El Lenguaje de Programacion en C</h5>
+                            <button type="submit" class="btn btn-primary" value="968-880-205-0" name="isbn"><a>Apartar Libro</a></button>
+                        </div>
+                </form>
+            </div>
+            <div class="card">
+                <form action="infolibro.php" method="post">
+                    <img src="img/libros/fundamentos.jpg" class="card-img-top" alt="libro" >
+                    <div class="card-body">
+                        <h5 class="card-title">Fundamentos de Programacion</h5>
+                        <button type="submit" class="btn btn-primary" value="84-481-3664-0" name="isbn"> <a>Apartar Libro</a> </button>
+                    </div>
+                </form>
+            </div>
+            <div class="card">
+                <form action="infolibro.php" method="post">
+                    <img src="img/libros/inte.jpg" class="card-img-top" alt="libro">
+                    <div class="card-body">
+                        <h5 class="card-title">Inteligencia Artificial</h5>
+                        <button type="submit" class="btn btn-primary" name="isbn" value="9788423429608"><a>Apartar Libro</a></button>
+                    </div>
+                </form>
+            </div>
+            <div class="card">
+                <form action="infolibro.php" method="post">
+                    <img src="img/libros/py.jpg" class="card-img-top" alt="libro">
+                    <div class="card-body">
+                        <h5 class="card-title">Python 3</h5>
+                        <button type="submit" class="btn btn-primary" value="8441526133" name="isbn"> <a>Apartar Libro</a></button>
+                    </div>
+                </form>
+            </div>
+            <div class="card">
+                <form action="infolibro.php" method="post">
+                    <img src="img/libros/Análisis_de_circuitos_eléctricos_en_DC.jpg" class="card-img-top" alt="libro" >
+                    <div class="card-body">
+                        <h5 class="card-title">Analisis de circuitos electronicos en DC</h5>
+                        <button type="submit" class="btn btn-primary" name="isbn" value="9681865448"><a>Apartar Libro</a></button>
+                    </div>
+                </form>
+            </div>
+            <div class="card">
+                <form action="infolibro.php" method="post">
+                    <img src="img/libros/cabridge_english_advanced.gif" class="card-img-top" alt="libro" >
+                    <div class="card-body">
+                        <h5 class="card-title">Cambridge English Advanced</h5>
+                        <button type="submit" class="btn btn-primary" name="isbn" value="978-1-107-65496-9"><a>Apartar Libro</a></button>
+                    </div>
+                </form>
+            </div>
+            <div class="card">
+                <form action="infolibro.php" method="post">
+                    <img src="img/libros/Circuitos_magnéticos_y_transformadores.jpg" class="card-img-top" alt="libro" >
+                    <div class="card-body">
+                        <h5 class="card-title">Circuitos magnéticos y transformadores</h5>
+                        <button type="submit" class="btn btn-primary" name="isbn" value="84-291-3050-0"><a>Apartar Libro</a></button>
+                    </div>
+                </form>
+            </div>
+            <div class="card">
+                <form action="infolibro.php" method="post">
+                    <img src="img/libros/clear_speech.jpg" class="card-img-top" alt="libro">
+                    <div class="card-body">
+                        <h5 class="card-title">Clear Speech</h5>
+                        <button type="submit" class="btn btn-primary" name="isbn" value="0521421187"><a>Apartar Libro</a></button>
+                    </div>
+                </form>
+            </div>
+            <div class="card">
+                <form action="infolibro.php" method="post">
+                    <img src="img/libros/Communicative_Grammar_Practice.jpg" class="card-img-top" alt="libro">
+                    <div class="card-body">
+                        <h5 class="card-title">Communicative Grammar Practice</h5>
+                        <button type="submit" class="btn btn-primary" name="isbn" value="0521398916"><a>Apartar Libro</a></button>
+                    </div>
+                </form>
+            </div>
+            <div class="card">
+                <form action="infolibro.php" method="post">
+                    <img src="img/libros/Complete_English_Grammar_Rules.jpg" class="card-img-top" alt="libro" >
+                    <div class="card-body">
+                        <h5 class="card-title">Complete english grammar rules</h5>
+                        <button type="submit" class="btn btn-primary" name="isbn" value="1535399201"><a>Apartar Libro</a></button>
+                    </div>
+                </form>
+            </div>
+            <div class="card">
+                <form action="infolibro.php" method="POST">
+                    <img src="img/libros/Cálculo_Aplicado.jpg" class="card-img-top" alt="libro" >
+                    <div class="card-body">
+                        <h5 class="card-title">Calculo Aplicado</h5>
+                        <button type="submit" class="btn btn-primary" name="isbn" value="6074816808"><a>Apartar Libro</a></button>
+                    </div>
+                </form>
+            </div>
+            <div class="card">
+                <form action="infolibro.php" method="post">
+                    <img src="img/libros/Electrónica%20de%20potencia_circuitos_dispositivos_y_aplicaciones.jpg" class="card-img-top" alt="libro" value="970-26-0532-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Electronica de Potencia</h5>
+                        <button type="submit" class="btn btn-primary" name="isbn" value="970-26-0532-6"><a>Apartar Libro</a></button>
+                    </div>
+                </form>
+            </div>
+            <div class="card">
+                <form action="infolibro.php" method="post">
+                    <img src="img/libros/Elementary_Linear_Algebra.jpg" class="card-img-top" alt="libro" >
+                    <div class="card-body">
+                        <h5 class="card-title">Linear Algebra</h5>
+                        <button type="submit" class="btn btn-primary" name="isbn" value="0-03-097354-6"><a>Apartar Libro</a></button>
+                    </div>
+                </form>
+            </div>
+            <div class="card">
+                <form action="infolibro.php" method="post">
+                    <img src="img/libros/Estructuras_de_matemáticas_discretas_para_la_computación.jpg" class="card-img-top" alt="libro" >
+                    <div class="card-body">
+                        <h5 class="card-title">Estructuras de matematicas discretas para la computacion</h5>
+                        <button type="submit" class="btn btn-primary" name="isbn" value="968-880-799-0"><a>Apartar Libro</a></button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card">
+                <form action="infolibro.php" method="post">
+                    <img src="img/libros/FÓRMULAS_Y_TABLAS_DE_MATEMÁTICA_APLICADA.gif" class="card-img-top" alt="libro" >
+                    <div class="card-body">
+                        <h5 class="card-title">Formulas y tablas de matematica aplicada</h5>
+                        <button type="submit" class="btn btn-primary" name="isbn" value="978-607-15-1145-4"><a>Apartar Libro</a></button>
+                    </div>
+                </form>
+            </div>
+            <div class="card">
+                <form action="infolibro.php" method="post">
+                        <img src="img/libros/Haptics_for_Teleoperated_Surgical_Robotic_Systems.jpg" class="card-img-top" alt="libro">
+                        <div class="card-body">
+                            <h5 class="card-title">Haptics for Teleoperated Surgical Robotic Systems</h5>
+                            <button type="submit" class="btn btn-primary" name="isbn" value="978-981-281-315-2"><a>Apartar Libro</a></button>
+                        </div>
+                </form>
+            </div>
+            <div class="card">
+                <form action="infolibro.php" method="post">
+                        <img src="img/libros/Introducción_al_análisis_de_circuitos.jpg" class="card-img-top" alt="libro" >
+                        <div class="card-body">
+                            <h5 class="card-title">Introducción al análisis de circuitos</h5>
+                            <button type="submit" class="btn btn-primary" name="isbn" value="970-26-0448-6"><a>Apartar Libro</a></button>
+                        </div>
+                </form>
+            </div>
+            <div class="card">
+                <form action="infolibro.php" method="post">
+                    <img src="img/libros/Learning_to_Learn_English.jpg" class="card-img-top" alt="libro" >
+                    <div class="card-body">
+                        <h5 class="card-title">Learning to Learn English</h5>
+                        <button type="submit" class="btn btn-primary" name="isbn" value="0521338166"><a>Apartar Libro</a></button>
+                    </div>
+                </form>
+            </div>
+            <div class="card">
+                <form action="infolibro.php" method="post">
+                    <img src="img/libros/Linear_Algebra_with_Maple.jpg" class="card-img-top" alt="libro" >
+                    <div class="card-body">
+                        <h5 class="card-title">Linear Algebra with Maple</h5>
+                        <button type="submit" class="btn btn-primary" name="isbn" value="0-471-06368-1"><a>Apartar Libro</a></button>
+                    </div>
+                </form>
+            </div>
+            <div class="card">
+                <form action="infolibro.php" method="post">
+                        <img src="img/libros/Matrix_Algebra_Theory_Computations_and_Applications_in_Statistics.jpg" class="card-img-top" alt="libro" >
+                        <div class="card-body">
+                            <h5 class="card-title">Matrix Algebra Theory Computations and Applications in Statistics</h5>
+                            <button type="submit" class="btn btn-primary" name="isbn" value="978-0-387-70872-0"><a>Apartar Libro</a></button>
+                        </div>
+                </form>
+            </div>
+            <div class="card">
+                <form action="infolibro.php" method="post">
+                    <img src="img/libros/METODOS_MATEMATICOS.gif" class="card-img-top" alt="libro" >
+                    <div class="card-body">
+                        <h5 class="card-title">Metodos Matematicos</h5>
+                        <button type="submit" class="btn btn-primary" name="isbn" value="978-84-7897-825-0"><a>Apartar Libro</a></button>
+                    </div>
+                </form>
+            </div>
+            <div class="card">
+                <form action="infolibro.php" method="post">
+                    <img src="img/libros/new_international_bussiness_english.jpg" class="card-img-top" alt="libro" >
+                    <div class="card-body">
+                        <h5 class="card-title">New international bussiness english</h5>
+                        <button type="submit" class="btn btn-primary" name="isbn" value="0-521-77470-5"><a>Apartar Libro</a></button>
+                    </div>
+                </form>
+            </div>
+            <div class="card">
+                <form action="infolibro.php" method="post">
+                    <img src="img/libros/Oxford_English_for_Electrical_and_Mechanical_Engineering.gif" class="card-img-top" alt="libro" >
+                    <div class="card-body">
+                        <h5 class="card-title">Oxford English for Electrical and Mechanical Engineering</h5>
+                        <button type="submit" class="btn btn-primary" name="isbn" value="978-0-19-457392-4"><a>Apartar Libro</a></button>
+                    </div>
+                </form>
+            </div>
+            <div class="card">
+                <form action="infolibro.php" method="post">
+                    <img src="img/libros/Robótica_Control_de_Robots_Manipuladores.jpg" class="card-img-top" alt="libro" >
+                    <div class="card-body">
+                        <h5 class="card-title">Robótica Control de Robots Manipuladores</h5>
+                        <button type="submit" class="btn btn-primary" name="isbn" value="978-607-707-190-7"><a>Apartar Libro</a></button>
+                    </div>
+                </form>
+            </div>
+            <div class="card">
+                <form action="infolibro.php" method="post">
+                    <img src="img/libros/Robótica_Manipuladores_y_Robots_Móviles.jpg" class="card-img-top" alt="libro" >
+                    <div class="card-body">
+                        <h5 class="card-title">Robótica Manipuladores y Robots Móviles</h5>
+                        <button type="submit" class="btn btn-primary" name="isbn" value="84-267-1313-0"><a>Apartar Libro</a></button>
+                    </div>
+                </form>
+            </div>
+            <div class="card">
+                <form action="infolibro.php" method="post">
+                    <img src="img/libros/The_MATHEMATICA.jpg" class="card-img-top" alt="libro" >
+                    <div class="card-body">
+                        <h5 class="card-title">The mathematica</h5>
+                        <button type="submit" class="btn btn-primary" name="isbn" value="1-57955-004-5 0-521-"><a>Apartar Libro</a></button>
+                    </div>
+                </form>
+            </div>
+            <div class="card">
+                <form action="infolibro.php" method="post">
+                    <img src="img/libros/Welcome_English_for_travel_and_tourism.jpg" class="card-img-top" alt="libro" >
+                    <div class="card-body">
+                        <h5 class="card-title">Welcome English for travel and tourism</h5>
+                        <button type="submit" class="btn btn-primary" name="isbn" value="978-0-521-60659-2"><a>Apartar Libro</a></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="overlay" id="overlay">
+            <div class="popup" id="popup">
+                <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                <em><h2>CONTACTO</h2></em>
+                <em><h4>Rellenar los siguientes campos</h4></em>
+                <form class="formulario" id="contacto" action="php/enviarEmail.php" method="post">
+                    <fieldset>
+                        <label for="email">Email Ucol: </label>
+                        <input class="form-control" type="email" id="email" name="email" placeholder="Ingresa correo ucol" autocomplete="off" required>
+                        <br>
+
+                        <label for="asunto">Asunto: </label>
+                        <input class="form-control" type="text" id="asunto" name="asunto" placeholder="Ingresa asunto" autocomplete="off" required>
+                        <br>
+
+                        <textarea class="form-control" id="msg" name="msg" rows="15" cols="70" placeholder="Ingresa tus comentarios aqui" autocomplete="off" required></textarea>
+                        <br>
+
+                        <input class="Boton1" id="prestamo" type="submit" value="Enviar Mensaje">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div id="logos">
+                <a href="https://www.facebook.com/Biblioteca-de-Ciencias-del-Mar-160360921103339/"><img src="img/logos/fblogo.png" id="fb" alt=""></a>
+                <a href="http://127.0.0.1:5500/contactanos.html"><img src="img/logos/email.png" id="gmail" alt=""></a>
+            </div>
+            <div id="copyright">
+                &copy;Derechos Reservados 2018-2021 Universidad de Colima
+            </div>
+            <div id="mapsite">
+                <a href="#"><img src="img/logos/mapsite.png" id="ms" alt=""></a>
+            </div>
+        </footer>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/popup.js"></script>
+</body>
+
+</html>

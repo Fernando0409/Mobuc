@@ -1,0 +1,77 @@
+.formulario {
+    margin: 20px;
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.barra .form-control {
+    width: 400px;
+    margin-left: 50px;
+    box-shadow: none;
+}
+
+.Boton1 {
+    background-color: rgb(240, 154, 42);
+    width: 300px;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px #000;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid rgb(240, 154, 42);
+    transition: 0.6s ease;
+    font-size: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+}
+
+.Boton1:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+    border: 1px solid rgb(240, 190, 42);
+    background-color: rgb(240, 190, 42);
+}
+
+.cont .formulario .enviar {
+    align-items: center;
+}
+
+#inflibro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+    border-left: 2px solid #000;
+}
+
+#inflibro h2 {
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+#inflibro1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+#infopedido {
+    margin: 20px;
+}
+
+#infopedido table {
+    width: 300px;
+    height: 400px;
+}
+
+#imglibro img {
+    width: 300px;
+    height: 400px;
+}

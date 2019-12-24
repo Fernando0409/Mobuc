@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Estilos de Fuentes--->
+    <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/contac.css">
+
+    <title>MoBuc</title>
+</head>
+
+<body>
+    <div class="ContenedorPrincipal">
+        <header>
+            <div class="logo">
+                <img src="img/ucol.png" alt="" width="250px">
+            </div>
+            <nav>
+                <a class="qi" href="MoBuc.html">Inicio</a>
+                <a class="qi" target="_blank" href="docs/Reglamento_de_la_Biblioteca.pdf">Reglamento</a>
+                <button class="qo" id="btn-abrir-popup">Contactanos</button>
+                <a class="qi" href="Acercade.html">Acerca de</a>
+            </nav>
+        </header>
+        <div class="overlay" id="overlay">
+            <div class="popup" id="popup">
+                <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                <em><h2>CONTACTO</h2></em>
+                <em><h4>Rellenar los siguientes campos</h4></em>
+                <form class="formulario" id="contacto" action="php/enviarEmail.php" method="post">
+                    <fieldset>
+                        <label for="email">Email Ucol: </label>
+                        <input class="form-control" type="email" id="email" name="email" placeholder="Ingresa correo ucol" autocomplete="off" required>
+                        <br>
+
+                        <label for="asunto">Asunto: </label>
+                        <input class="form-control" type="text" id="asunto" name="asunto" placeholder="Ingresa asunto" autocomplete="off" required>
+                        <br>
+
+                        <textarea class="form-control" id="msg" name="msg" rows="15" cols="70" placeholder="Ingresa tus comentarios aqui" autocomplete="off" required></textarea>
+                        <br>
+
+                        <input class="Boton1" id="prestamo" type="submit" value="Enviar Mensaje">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div id="inicio">
+            <div class="contenedor">
+                <h1>MoBuc</h1>
+                <p>Busca, Aparta y Aprende</p>
+                <a href="MoBuc.html">Entrar</a>
+            </div>
+        </div>
+        <div class="cont">
+            <div id="funcion">
+                <div class="info">
+                    <div class="icon1"><img class="icono" src="img/iconos/funcion.png"></div>
+                    <h1>Funciones</h1>
+                    <p>Es muy simple! Solo busca la temática y/o tipo de material que desees. Posteriormente selecciona el libro para ver sus datos generales, solicita o renueva el material ingresando tus datos, verifica tu identidad ¡Y listo!</p>
+                </div>
+            </div>
+            <div id="material">
+                <div class="info">
+                    <div class="icon1"><img class="icono" src="img/iconos/material.png"></div>
+                    <h1>Material</h1>
+                    <p>Dentro del tipo de material que puedes encontrar para solicitar puedes encontrar desde libros, tesis, revistas, CD, novelas, etc. En cada uno de estos materiales podrás encontrar una descripción de cada uno de ellos además de sus datos
+                        generales con lo cual podrás verificar si es el material indicado.</p>
+                </div>
+            </div>
+            <div id="servicios">
+                <div class="info">
+                    <div class="icon1"><img class="icono" src="img/iconos/servicio.png"></div>
+                    <h1>Servicios</h1>
+                    <p>El sistema Mobuc es una herramienta para los universitarios, ellos podrán conseguir el material que necesiten. El objetivo principal es brindar facilidad al momento de reservar y renovar material diferenet tipo de material disponible
+                        en la biblioteca Ciencias del Mar</p>
+                </div>
+            </div>
+        </div>
+        <div class="cont">
+            <div id="funcion1">
+                <img src="img/inicio/funciones.jpg" height="200px" width="310px">
+                <h1>Funciones</h1>
+            </div>
+            <div id="material1">
+                <img src="img/inicio/libros.jpg" height="200px" width="310px">
+                <h1>Material</h1>
+            </div>
+            <div id="servicios1">
+                <img src="img/inicio/servicio.jpg" height="200px" width="310px">
+                <h1>Servicios</h1>
+            </div>
+        </div>
+        <div id="reglamento">
+            <div id="titulo">
+                <img src="img/inicio/reglamento.jpg" height="200px" width="310px">
+                <h1>Reglamento</h1>
+            </div>
+            <div id="infor">
+                <p>La Bibliteca Ciencias del Mar es una institucion al servicio destinadas a atender a la comunidad estudiantil, docentes y administrativa, el instituto que presta sus servicios, facilitando la utilizacion de los libros, publicaciones y diversos
+                    materiales, adecuados a sus necesidades de estudio e investigación.</p>
+            </div>
+        </div>
+        <div id="acercade">
+            <div id="contactos">
+                <img src="img/inicio/acercade.jpg" height="200px" width="310px">
+                <h1>Contactos</h1>
+            </div>
+            <div id="infor">
+                <p>Para más información o dudas y sugerencias sobre el uso del sitio no dudes en comunicarte con nosotros al correo <strong><em>ibmar@ucol.mx</em></strong> o llamar al numero <strong><em>314 331 1200 Ext 53321</em></strong>.</p>
+            </div>
+        </div>
+        <footer>
+            <div id="logos">
+                <a href="https://www.facebook.com/Biblioteca-de-Ciencias-del-Mar-160360921103339/"><img src="img/logos/fblogo.png" id="fb" alt=""></a>
+                <a href="http://127.0.0.1:5500/contactanos.html"><img src="img/logos/email.png" id="gmail" alt=""></a>
+            </div>
+            <div id="copyright">
+                &copy;Derechos Reservados 2018-2021 Universidad de Colima
+            </div>
+            <div id="mapsite">
+                <a href="#"><img src="img/logos/mapsite.png" id="ms" alt=""></a>
+            </div>
+        </footer>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/popup.js"></script>
+</body>
+
+</html>
